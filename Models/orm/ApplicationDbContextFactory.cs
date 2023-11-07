@@ -1,5 +1,3 @@
-namespace FIFO_LIFO.Models.orm;
-
 using Microsoft.EntityFrameworkCore;
 
 public static class ApplicationDbContextFactory
