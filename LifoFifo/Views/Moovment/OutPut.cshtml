@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Mouvement de sortie</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <form class="form-control" asp-action="OutPut" method="post">
+            <h1>Nouveau mouvement de sortie</h1>
+            <div class="mt-3">
+                @Html.Label("Nombre")
+                <input name="Quantite" type="number" value="" class="form-control"/>
+            </div>
+            <div class="mt-3">
+                @Html.Label("Date de sortie")
+                <input name="OutputDate" type="datetime-local" class="form-control"/>
+            </div>
+            <div class="mt-3">
+                <select name="Shop" class="form-select">
+                    <option class="form-select" value="MG001">MG001</option>
+                </select>
+            </div>
+            <div class="mt-3">
+                <select name="Product" class="form-select">
+                    <option class="form-select" value="RR">RR</option>
+                </select>
+            </div>
+            <input class="mt-3 btn btn-primary" type="submit"/>
+        </form>
+        @Html.ValidationSummary()
+    </div>
+</div>
+</body>
+</html>

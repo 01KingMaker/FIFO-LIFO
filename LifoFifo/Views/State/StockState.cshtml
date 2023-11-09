@@ -1,0 +1,58 @@
+@using LifoFifo.Models.orm.stock
+
+@{
+    EtatDeStock StockState = (EtatDeStock) ViewData["stockState"];
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Etat de stock</title>
+    <link rel="stylesheet" href="/css/StockState.css"/>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row date-group">
+        <form asp-action="StockState" class="form-control">
+            <h1>Etat de stock</h1>
+            @Html.Label("Date 1")
+            <input type="datetime-local" value="@StockState.Date1" name="Date1"/>
+            @Html.Label("Date 2")
+            <input type="datetime-local" value="@StockState.Date2" name="Date2"/>
+            Magasin
+            <input type="text" value="@StockState.productId" name="productId"/>
+            Produit
+            <input type="text" value="@StockState.shopId" name="shopId"/>
+            <input type="submit" value="Recherche"/>
+        </form>
+    </div>
+    <div class="row mt-3">
+        @StockState.Date1
+        ,
+        @StockState.Date2
+        <table class="table-info">
+            <tr>
+                <th>Produit</th>
+                <th>Magasin</th>
+                <th>Quantité Initiale</th>
+                <th>Reste</th>
+                <th>Prix unitaire</th>
+                <th>Total</th>
+            </tr>
+            @foreach (Stock stock in StockState.Stocks)
+            {
+                <tr>
+                    <td>@stock.ProductCode</td>
+                    <td>@stock.ShopId</td>
+                    <td>@stock.InitialQuantity</td>
+                    <td>@stock.Rest2</td>
+                    <td>@stock.UnitairPrice</td>
+                    <td>@stock.TotalPrice</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+</body>
+</html>
