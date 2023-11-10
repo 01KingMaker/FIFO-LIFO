@@ -1,8 +1,0 @@
-E:\GitHub\FIFO-LIFO\obj\Debug\net7.0\FIFO-LIFO.csproj.AssemblyReference.cache
-E:\GitHub\FIFO-LIFO\obj\Debug\net7.0\FIFO-LIFO.GeneratedMSBuildEditorConfig.editorconfig
-E:\GitHub\FIFO-LIFO\obj\Debug\net7.0\FIFO-LIFO.AssemblyInfoInputs.cache
-E:\GitHub\FIFO-LIFO\obj\Debug\net7.0\FIFO-LIFO.AssemblyInfo.cs
-E:\GitHub\FIFO-LIFO\obj\Debug\net7.0\FIFO-LIFO.csproj.CoreCompileInputs.cache
-E:\GitHub\FIFO-LIFO\obj\Debug\net7.0\FIFO-LIFO.MvcApplicationPartsAssemblyInfo.cache
-E:\GitHub\FIFO-LIFO\obj\Debug\net7.0\FIFO-LIFO.RazorAssemblyInfo.cache
-E:\GitHub\FIFO-LIFO\obj\Debug\net7.0\FIFO-LIFO.RazorAssemblyInfo.cs
